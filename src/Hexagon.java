@@ -1,8 +1,8 @@
     /* Hexagon.java
      * Alessandro Krapf
      * 5 April 2020
-     * Creates a hexagon based on the square class
-     * Because of inheritance, no methods or attributes need to be defined here.
+     * Create the Rhombus class based on the Square class, it uses all the parent defined methods.
+     * But because the area is calculated in a different way from square and rectangle it overloads the getArea() method and the getPerimeter() method.
      * Square uses all the methods defined in Shape, Rectangle, and Square.
      */
 // Have Hexagon use all of Squares methods
