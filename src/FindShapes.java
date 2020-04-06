@@ -12,8 +12,10 @@ public class FindShapes {
         Square square = new Square(7);
         Circle circle = new Circle(3);
         Rhombus rhombus = new Rhombus(5, 0.5);
+        Trapezoid trap = new Trapezoid(5,6,3,9,4);
         System.out.println("Rectable are is: " + rec1.getArea());
         System.out.println("Square area is: "+ square.getArea());
+        System.out.println(trap.getArea());
         System.out.println("The sum can go in either direction!");
         System.out.println("The sum of the rectangel and square areas is: " + rec1.addArea(square));
         System.out.println("The sum of the square and rectangle areas is: " + square.addArea(rec1));
