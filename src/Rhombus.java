@@ -16,7 +16,6 @@ public class Rhombus extends Square {
         else if (angle > 1) angle = 1;
         this.angle = angle;
     }
-
     // Cannot use the rectangle version, so defines its own getArea()
     double getArea() {
         return angle * this.height * this.width;
