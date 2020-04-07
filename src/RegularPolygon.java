@@ -13,7 +13,7 @@ public class RegularPolygon extends Shape{
         this.length=SideLength;
         this.sides=SideNum;
     }
-    // Cannot use the rectangle version, so defines its own getArea() and getPerimeter()
+    // Cannot use any other shapes' version, so defines its own getArea() and getPerimeter()
     double getArea() {
         return (.5 * (this.sides * this.length) * (this.length / (2 * Math.tan(Math.PI/ this.sides)))); }
     double getPerimeter() {
