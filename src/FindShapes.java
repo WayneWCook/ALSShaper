@@ -1,19 +1,23 @@
 /* FindShapes.java
- * Wayne Cook
- * 25 March 2020
- * Create the main class to test the rectangle, swuare, circle and shombus classes.
+ * Wayne Cook, Luke Langius, Alessandro Krapf, Safwan Ahmad
+ * 7 April 2020
+ * Create the main class to test the rectangle, square, circle, rhombus, parrallelogram, trapezoid, hexagon, and any regular polygon classes.
  * Force a commit
  */
 //package Shape-RCC;
 
+import java.util.Scanner;
+
 public class FindShapes {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double s = 0,n = 0;
         Rectangle rec1 = new Rectangle(15,10);
         Square square = new Square(7);
         Circle circle = new Circle(3);
         Rhombus rhombus = new Rhombus(5, 0.5);
         Trapezoid trap = new Trapezoid(5,6,3,9,4);
-        Hexagon hex = new Hexagon(6);
+        Hexagon hex = new Hexagon(5);
         Parallelogram para = new Parallelogram(6,8);
         System.out.println("Rectangle are is: " + rec1.getArea());
         System.out.println("Square area is: "+ square.getArea());
@@ -33,7 +37,13 @@ public class FindShapes {
         System.out.println("The areas of Circle and Rhombus added together is: " + circle.addArea(rhombus));
         System.out.println("The areas of Trapezoid and Hexagon added together is: " + trap.addArea(hex));
         System.out.println("The areas of Hexagon and Parallelogram added together is: " + hex.addArea(para));
-
+        System.out.println("How many sides does polygon X have?");
+        n = input.nextDouble();
+        System.out.println("How long are the sides of polygon X?");
+        s = input.nextDouble();
+        RegularPolygon poly = new RegularPolygon(n,s);
+        System.out.println("Polygon X area = " + poly.getArea() + "\n" +
+                            "Polygon X perimeter = " + poly.getPerimeter());
     }
 
 }
