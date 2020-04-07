@@ -1,5 +1,12 @@
+/* Regular.java
+ * Alessandro Krapf
+ * 7 April 2020
+ * It uses all the parent defined methods, in Shape.
+ * But because the area is calculated in a different way from other shapes it overloads the getArea() method and the getPerimeter() method.
+ */
+// Have RegularPolygon use all of Shapes methods
 public class RegularPolygon extends Shape{
-    private double sides;
+    private double sides;       //the formula for finding the area and perimeter uses two independent variables
     private double length;
     RegularPolygon(double SideNum, double SideLength) {
         // Parent class is always referenced as super.
