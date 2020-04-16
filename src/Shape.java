@@ -7,14 +7,14 @@
 //package Shape-RCC;
 
 public abstract class Shape {
+    static int count = 0;               //attribute of "count"
+    Shape() {count++;}                  //constructor
+    protected void finalized() {count--;}                    //destructor
     // Force children to implement the following methods.
     abstract double getArea();
     abstract double getPerimeter();
     //Provide the following methods for each child.
-    double addArea(Shape other) {
-        return (this.getArea() + other.getArea());
-    }
-    double addPerimeter(Shape other) {
-        return (this.getPerimeter() + other.getPerimeter());
-    }
+    double addArea(Shape other) {return (this.getArea() + other.getArea());}
+    double addPerimeter(Shape other) { return (this.getPerimeter() + other.getPerimeter());}
+    int getcount() {return count;}
 }

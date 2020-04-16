@@ -37,13 +37,28 @@ public class FindShapes {
         System.out.println("The areas of Circle and Rhombus added together is: " + circle.addArea(rhombus));
         System.out.println("The areas of Trapezoid and Hexagon added together is: " + trap.addArea(hex));
         System.out.println("The areas of Hexagon and Parallelogram added together is: " + hex.addArea(para));
-        System.out.println("How many sides does polygon X have?");
+        System.out.print("How many sides does polygon X have? ");
         n = input.nextDouble();
-        System.out.println("How long are the sides of polygon X?");
+        System.out.print("How long are the sides of polygon X? ");
         s = input.nextDouble();
         RegularPolygon poly = new RegularPolygon(n,s);
         System.out.println("Polygon X area = " + poly.getArea() + "\n" +
                             "Polygon X perimeter = " + poly.getPerimeter());
+        System.out.println("The end is now here, say goodbye to the " + para.getcount() + " shapes");
+        rec1.finalized();
+        System.out.println("Rectangle has been yeeted, there are now " + para.getcount() + " shapes left");
+        square.finalized();
+        System.out.println("Square has been yeeted,    there are now " + para.getcount() + " shapes left");
+        circle.finalized();
+        System.out.println("Circle has been yeeted,    there are now " + para.getcount() + " shapes left");
+        rhombus.finalized();
+        System.out.println("Rhombus has been yeeted,   there are now " + para.getcount() + " shapes left");
+        trap.finalized();
+        System.out.println("Trapezoid has been yeeted, there are now " + para.getcount() + " shapes left");
+        hex.finalized();
+        System.out.println("Hexagon has been yeeted,   there are now " + para.getcount() + " shapes left");
+        para.finalized();
+        System.out.println("There is only " + para.getcount() + " shape left");
     }
 
 }
